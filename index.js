@@ -1,9 +1,11 @@
+const { request } = require('express');
 const express = require('express');
 
 const app = express()
+const productRoutes = require('./src/routers/products');
 
-app.use(() => {
-    console.log('Coding tiap hari');
-})
+
+// use router
+app.use('/', productRoutes);
 
 app.listen(4000);
