@@ -1,0 +1,37 @@
+Standar API
+
+{root.api}/v1/{grouping}/{endpoint}
+SIMPLE:
+http://mern-api.yezycode.com/{version}/auth/login
+
+GROUP: Authentication
+
+[1] - Register
+{root.api}/{version}/auth/register
+
+req:
+{
+    "name": "nameuser",
+    "email": "example@gmail.com",
+    "password": "123123"
+}
+
+res: 
+{
+    "message": "Register Success",
+    "data": {
+        "id": 1,
+        "name": "Testing",
+        "email": "test@gmail.com",
+        "password": "123123"
+    }
+}
+
+[2] - Login 
+
+GROUP: Blog
+
+[1] - Create Blog Post
+[2] - Get Blog Post
+[3] - Update Blog Post
+[4] - Delete Blog Post
